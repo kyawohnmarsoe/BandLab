@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+a,a:hover,a:active,a:visited{
+    text-decoration: none;
+    color:#fff;
+}
+a:hover{
+    opacity: 0.8;
+}
+/* Header Section */
+.banner-wapper{
+    background-color: #000;
+    height: 643px;
+    background-image:url('../img/banner_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#fff;
+}
+.featured-title{
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+button{
+    border:0px;
+    text-transform: uppercase;
+    font-size:17px;
+    color:#fff;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+button.active{
+    border:0px;
+}
+.owl-dot.active span{ 
+    background:#e47f3a !important;
+}
+
+button.active, button:active, button:focus{ 
+    border:0px !important;;
+    border:none !important;;
+    border-color: transparent !important;;
+}
+
+.banner-btn{
+    background: #e47f3a;
+}
+.banner-btn:hover{
+    background:#e56c19;
+}
+.owl-theme .owl-nav{
+    display:none;
+}
+
+/* Monocreators Section */
+.bg-black{
+    background:#000;
+}
+.mono-title{
+    color:#fff;
+    font-size:60px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.box-wapper{
+    margin-top:35px;
+}
+.box-img-wapper{
+    overflow: hidden;
+}
+.box-img{
+    border-radius: 7px;
+    filter: grayscale(100%);
+    transition: transform 2s;
+}
+.box-img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.box-name{
+    color:#fff;
+    /* font-size:60px;
+    font-weight: bold; */
+}
+
+
+/* Names Section */
+.name-box{
+    border-bottom:1px solid #e2e1e1;
+}
+.name-item{
+    width:20%;
+    padding: 5px 10px;
+}
+.name-title{
+    color:#e47f3a;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+@media (max-width: 767.98px) { 
+    .name-item{
+        width: 25%;
+    }
+}
+@media (max-width: 575.98px) { 
+    .mono-title,.featured-title{
+        font-size: 30px;
+    }
+    .box-img{
+        filter: grayscale(0%);
+    }
+    .banner-wapper{
+        height: auto;
+        background-image:none;
+    }
+    .name-item{
+        width: 50%;
+    }
+    button.active, button:active, button:focus{ 
+        border:0px !important;;
+        border:none !important;;
+        border-color: transparent !important;;
+    }
+    
+
+}
